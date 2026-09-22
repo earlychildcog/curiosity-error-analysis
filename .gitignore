@@ -19,6 +19,7 @@ logs
 # macos config files
 .DS_Store
 */.DS_Store
+echo ".DS_Store" >> .gitignore
 
 # old scirpts we keep for reference just for us
 curE_EEG_99*
