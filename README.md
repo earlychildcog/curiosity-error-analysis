@@ -44,13 +44,18 @@ Then run the ET scripts:
 
 
 /!\ Respect the order of the scripts and the erpTypes:
+
     - ERN baseline values are needed for FRN processing,
+    
     - FRN included trials are needed for ERN processing,
+    
     - EEG values are needed for adequate file export for running stats.
 
 
 The scripts output files in multiple folders.
+
 Use the csv files in this folder to conduct the statistical analyses:
+
 /Users/[yourusername]/Data/curE/Visit1/eyetracking copy/4_OutputsForStats
 
 
