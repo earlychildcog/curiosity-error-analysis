@@ -7,7 +7,7 @@ end
 
 % add fieldtrip (you can also add an elseif condition for your own FT folder)
 if opts.flagFT
-    path_ft = fullfile(pwd,"src","fieldtrip");
+    path_ft = fullfile(pwd,"src","libraries","fieldtrip");
     assert(isfolder(path_ft), ...
         "FieldTrip toolbox required -- please download it and save your path above -- https://www.fieldtriptoolbox.org/download/")
     addpath(path_ft)
