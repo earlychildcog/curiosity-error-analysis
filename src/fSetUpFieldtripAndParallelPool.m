@@ -7,11 +7,7 @@ end
 
 % add fieldtrip (you can also add an elseif condition for your own FT folder)
 if opts.flagFT
-    if strcmp(getenv('USER'), 'cecile')
-        path_ft = "~/MatlabToolboxes/fieldtrip";
-    else
-        path_ft = fullfile(pwd,"src","fieldtrip");
-    end
+    path_ft = fullfile(pwd,"src","fieldtrip");
     assert(isfolder(path_ft), ...
         "FieldTrip toolbox required -- please download it and save your path above -- https://www.fieldtriptoolbox.org/download/")
     addpath(path_ft)
