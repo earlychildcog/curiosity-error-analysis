@@ -189,6 +189,7 @@ if flagPlotDiff
     end
     title(sprintf('%s - N = %d',groupName,Nsubj));
     fontsize(font_size,'points');
+    box on;
     lim = axis;
     if ~isnan(BL(1))
         rBaseL = rectangle(Position=[BL(1),lim(3),-(BL(1)-BL(2)),lim(4)-lim(3)],FaceColor=[.5,.5,.5],FaceAlpha=.3,EdgeColor="none");

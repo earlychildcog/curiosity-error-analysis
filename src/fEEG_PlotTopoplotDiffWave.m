@@ -6,7 +6,7 @@ fig.Position(3) = fig.Position(3)*1.2; % make the figure a bit bigger otherwise 
 cfg.comment            = 'no';
 cfg.colorbar           = 'yes';
 cfg.colormap           = colormap(linspecer); % change to a print-friendly, colorblind-friendly colormap
-cfg.colorbartext       = 'Ampl. (\muV)'; %string indicating the text next to colorbar
+cfg.colorbartext       = 'Amplitude (\muV)'; %string indicating the text next to colorbar
 % cfg.layout   = layout; % Optional
 cfg.xlim               = timeWin; % Pre-stim window
 if ~isempty(z_lim)
@@ -30,7 +30,7 @@ cfg.figure             = 'no'; %we create our own figure before and set its size
 
 
 ft_topoplotER(cfg, Difference_grandavg);
-fontsize(30,'points');
+fontsize(32,'points');
 sgtitle(sprintf('%s topography: %.3f to %.3f s',erptype,cfg.xlim(1),cfg.xlim(2)))
 
 end
