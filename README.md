@@ -1,4 +1,4 @@
-# curEM: match-to-sample task EEG & ETanalysis, visit 1
+# curEM: match-to-sample task EEG & ETanalysis, visits 1-2-3
 
 Find the latest version on https://github.com/earlychildcog/curiosity-error-analysis/
 
