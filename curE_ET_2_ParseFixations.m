@@ -146,9 +146,9 @@ writetable(R,fullfile(pathDataSummaryOut, sprintf("perTrial-visit%d.csv",visit))
 
 fprintf("Now removing outliers.... \n");
 % First load eeg and ctrl variables to save all into 1 big file for stats
-[ctrl_vars, eegData, eegETsessions] = fET_GetCtrlAndEEGVars_curEM(visit, sessions);
+[ctrl_vars, eegData, incl_sessions] = fET_GetExtraVars_curEM(visit, sessions);
 % Keep only the participants with EEG & ET and create empty tables to export the data
-sessions = eegETsessions;
+sessions = incl_sessions;
 R = R(ismember(R.session, sessions),:);
 T_Stats = fET_InitialiseStatsTable(sessions);
 % Now loop through the ppts and remove outliers + calculate stats
